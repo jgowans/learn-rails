@@ -50,8 +50,11 @@ gem 'gibbon'
 gem 'google_drive'
 gem 'high_voltage'
 gem 'simple_form'
+# custom:
 group :development do
   gem 'better_errors'
+  gem 'pry'
+  gem 'meta_request'
   gem 'quiet_assets'
   gem 'rails_layout'
 end
