@@ -10,6 +10,7 @@ class ContactsController < ApplicationController
       @contact.update_spreadsheet
       # TODO save data
       # TODO send message
+      UserMailer.contact_email(@contact).deliver
       flash[:notice] = "ContractSSSSS file: #{@contact.name}."
       redirect_to root_path
     else
